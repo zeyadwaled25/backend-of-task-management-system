@@ -37,9 +37,7 @@ router.put("/:id", async (req, res) => {
   try {
     const list = await List.findByIdAndUpdate(
       req.params.id,
-      {
-        name: req.body.name,
-      },
+      req.body,
       {
         new: true,
       }
