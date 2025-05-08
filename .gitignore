@@ -1,0 +1,28 @@
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# dotenv
+.env
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+logs/
+*.log
+logs/**/*.log
+
+# Optional: coverage and test output
+coverage/
+*.lcov
+
+# Optional: VS Code settings
+.vscode/
+
+# Optional: build artifacts
+dist/
+build/
