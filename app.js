@@ -11,7 +11,7 @@ const uri = process.env.MONGODB_URI; // Use an environment variable for the Mong
 
 // Add CORS middleware before other middleware and routes
 app.use(cors({
-  origin: 'http://localhost:5173', // Your React app's origin
+  origin: '*', // Your React app's origin
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization']
 }));

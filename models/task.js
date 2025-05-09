@@ -13,7 +13,7 @@ const taskSchema = new mongoose.Schema({
   keywords: [{ type: String }],
   listId: { type: mongoose.Schema.Types.ObjectId, ref: "List", required: true },
   list: { type: mongoose.Schema.Types.ObjectId, ref: "List", required: false },
-  category: { type: String, required: true },
+  category: { type: String, required: false },
 });
 
 taskSchema.pre("save", async function (next) {
